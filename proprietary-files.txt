@@ -89,6 +89,9 @@ vendor/lib/libdapparamstorage.so
 vendor/lib/soundfx/libdirac.so|da2c2c47da3e729dc94038cd2953e620499b1fad
 vendor/lib/soundfx/libmisoundfx.so|fde0519727e01c38296e4b938714f8501afc629b
 
+# Audio (FX modules) - from cheetah-user 13 TQ2A.230405.003.E1 9802792 release-keys
+vendor/lib/soundfx/libspatialaudio.so|379b98b020729d05cad4e84202f42335b96bb755
+
 # Audio (Hardware)
 vendor/lib/hw/audio.primary.sm6150.so
 vendor/lib/vndk/libxlog.so

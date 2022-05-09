@@ -52,6 +52,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.bluetooth.a2dp_offload.disabled=true \
 ro.bluetooth.a2dp_offload.supported=false
 
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.audio.spatializer_enabled=true
+
 # Audio (Features)
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.adm.buffering.ms=6 \
