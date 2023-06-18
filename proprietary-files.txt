@@ -871,7 +871,7 @@ vendor/lib/hw/vulkan.adreno.so|eb44067de1b12fb5ecd4f99eb810e7a3395979f0
 vendor/lib64/hw/vulkan.adreno.so|645840e711a880303bdea638ad664b349022cd2a
 
 # IRQ balance
-vendor/bin/msm_irqbalance
+vendor/bin/msm_irqbalance.conf
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti

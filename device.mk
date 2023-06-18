@@ -283,14 +283,9 @@ PRODUCT_PACKAGES += \
     TelephonyResSweet \
     WifiResSweet
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.sweet-libperfmgr \
-    android.hardware.power@1.2.vendor
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
