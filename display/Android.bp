@@ -15,6 +15,6 @@ cc_library_shared {
     shared_libs: [
         "liblog",
     ],
-    header_libs: ["generated_kernel_headers", "libdrm_headers"],
+    header_libs: ["qti_kernel_headers", "libdrm_headers"],
     vendor: true,
 }
