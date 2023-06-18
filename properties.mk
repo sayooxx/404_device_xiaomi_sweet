@@ -140,10 +140,6 @@ ro.vendor.bluetooth.wipower=false
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.launcher.blur.appLaunch=0
 
-# CNE
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-persist.vendor.cne.feature=1
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.disable_zsl_mode=1
@@ -166,11 +162,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.crypto.dm_default_key.options_format.version=2 \
 ro.crypto.volume.filenames_mode=aes-256-cts \
 ro.crypto.volume.metadata.method=dm-default-key
-
-# DPM
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-persist.vendor.dpm.feature=11 \
-persist.vendor.dpmhalservice.enable=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -289,10 +280,8 @@ persist.vendor.data.iwlan.enable=true
 
 # Radio/RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.radio.multisim.config=dsds \
 persist.sys.fflag.override.settings_provider_model=false \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.data_con_rprt=1 \
 persist.vendor.radio.data_ltd_sys_ind=1 \
 persist.vendor.radio.dynamic_sar=1 \
@@ -301,8 +290,6 @@ persist.vendor.radio.enableadvancedscan=true \
 persist.vendor.radio.force_ltd_sys_ind=1 \
 persist.vendor.radio.force_on_dc=true \
 persist.vendor.radio.manual_nw_rej_ct=1 \
-persist.vendor.radio.procedure_bytes=SKIP \
-persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 ro.telephony.default_cdma_sub=0 \
 ro.telephony.iwlan_operation_mode=legacy
@@ -314,7 +301,6 @@ telephony.active_modems.max_count=2
 PRODUCT_SYSTEM_PROPERTIES += \
 DEVICE_PROVISIONED=1 \
 ril.subscription.types=NV,RUIM \
-ro.telephony.default_network=22,22 \
 telephony.lteOnCdmaDevice=1
 
 # Radio (IMS)
