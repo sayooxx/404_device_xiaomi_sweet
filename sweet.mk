@@ -11,12 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common Project 404 stuff
-$(call inherit-product, vendor/404/config/common.mk)
-WITH_GAPPS := true
 
 
-PRODUCT_NAME := p404_sweet
+# Inherit from the Zephyr configuration.
+$(call inherit-product, vendor/zephyrus/target/product/zephyrus-target.mk)
+
+PRODUCT_NAME := sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro
